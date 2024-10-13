@@ -17,7 +17,7 @@ class Node:
         self.neighbors = []
         self.min_distance = float("inf")
     
-    def __lt__(self, other_node):
+    def __lt__(self, other_node): # Comparison Function
         return self.min_distance < other_node.min_distance
     
     def add_edge(self, weight, destination_vertex):
